@@ -21,7 +21,7 @@ const AboutCard = () => {
    <Container fluid className='bg-dark g-5'>
     <Row className='bg-dark justify-content-around' >
         {aboutItems.map((item,idx)=>(
-            <Col key={idx} className='g-3' md={2} xs={5}>
+            <Col key={idx} className='g-3' md={2} xs={4}>
                 <Card className=' bg-dark  text-white  align-items-center ps-4'>
                     <div className='text-start'>
                     <Card.Text className='text-secondary fw-bold'>{item.title}</Card.Text>
@@ -32,7 +32,7 @@ const AboutCard = () => {
                 </Card>
             </Col>
         ))}
-        <Col className='g-3' md={2} xs={5}>
+        <Col className='g-3' md={2} xs={4}>
                 <Card className=' bg-dark  text-white  align-items-center ps-4'>
                     <div className='text-start'>
                     <Card.Text className='text-secondary fw-bold'>Mail Us</Card.Text>       
