@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Container, Row, Stack } from 'react-bootstrap'
+import { Card, Container,Stack } from 'react-bootstrap'
 
 const VertialScroll = () => {
     
