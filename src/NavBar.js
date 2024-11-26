@@ -81,13 +81,13 @@ function NavBar() {
             <Form.Control 
               type="search"
               placeholder=" Search for Products, Brands and More"
-              className="me-2 mw-5 bg-light w-75"
+              className="me-2 mw-5 bg-light w-100"
               aria-label="Search"
             ></Form.Control>
         </Form>
        
         
-        <Navbar.Text className='d-flex justify-content-around align-items-center w-25 fs-6'>
+        <Navbar.Text className='d-flex justify-content-evenly align-items-center w-50 fs-6'>
         <div>
         <FaRegUserCircle  className='mb-1 '/>
         <span className='ms-1'>Login</span>

@@ -17,7 +17,7 @@ const CardBox = () => {
     const gadget=[{image:"./images/gadget1.jpeg",title:"Smart watches", subtitle:`From 1000`},
         {image:"./images/gadget2.jpeg",title:"Digital clock", subtitle:"Min. 60% Off"},
         {image:"./images/gadget3.jpeg",title:"Airpods", subtitle:"Min. 40% Off"},
-        {image:"./images/gadget4.jpeg",title:"Bluetooth speakers", subtitle:"From 1500"}
+        {image:"./images/gadget4.jpeg",title:"Speakers", subtitle:"From 1500"}
     ]
   return (
     <Container fluid className='mt-3 bg-white'>
