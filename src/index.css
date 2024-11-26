@@ -29,11 +29,7 @@ code {
 .App{
   background-color: whitesmoke;
 }
-/* .col
-  display:flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-} */
+
 
 .col{
   width: 100px;
@@ -55,6 +51,10 @@ code {
 
   #headerText,#searchBox{
     display: none;
+  }
+
+  #searchBox{
+   
   }
 
   #banner{

@@ -18,32 +18,30 @@ const AboutCard = () => {
     ]
     
   return (
-   <Container fluid className='bg-dark g-5'>
-    <Row className='bg-dark justify-content-around' >
+   <Container fluid className='bg-dark g-1'>
+    <Row className='bg-dark justify-content-around' md={3} xs={1} sm={2} lg={6}>
         {aboutItems.map((item,idx)=>(
-            <Col key={idx} className='g-3' md={2} xs={5}>
-                <Card className=' bg-dark  text-white  align-items-center ps-4'>
-                    <div className='text-start'>
+            <Col key={idx} className='g-3 ' >
+                <Card className='bg-dark  text-white ps-3 '>   
                     <Card.Text className='text-secondary fw-bold'>{item.title}</Card.Text>
                     {item.subtitle.map((subitem,idx)=>(
                         <Card.Text key='idx' >{subitem}</Card.Text>
                     ))}
-                    </div>
+                   
                 </Card>
             </Col>
         ))}
-        <Col className='g-3' md={2} xs={5}>
-                <Card className=' bg-dark  text-white  align-items-center ps-4'>
-                    <div className='text-start'>
+        <Col className='g-3' >
+                <Card className=' bg-dark  text-white   ps-3 text-start'>                  
                     <Card.Text className='text-secondary fw-bold'>Mail Us</Card.Text>       
                         <Card.Text >Flipkart Internet Private Limited,  Buildings Alyssa Begonia & Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village,-Bengaluru, 560103, Karnataka, India</Card.Text>
                     <Card.Text className='text-secondary fw-bold'>Social Media</Card.Text>
-                    <Card.Text className={`d-flex justify-content-between pe-5 me-5`} id="socialmediaIcon"  xs={1}>
+                    <Card.Text className={`d-flex justify-content-around w-50`} id="socialmediaIcon"  xs={1}>
                         <p><FaFacebook /></p>
                         <p><FaXTwitter /></p>
                         <p><FaYoutube /></p>
                     </Card.Text>
-                    </div>
+                  
                     
                 </Card>
             </Col>

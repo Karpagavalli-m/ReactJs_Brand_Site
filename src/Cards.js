@@ -10,9 +10,9 @@ const Cards = ({item}) => {
               <Card.Text className='fw-semibold' >
                 {item.title}
               </Card.Text>
-            <Card.Title className={'text-success fw-bold'}>
+            <Card.Text className={'text-success fw-bold'}>
                 {item.subtitle}
-              </Card.Title>
+              </Card.Text>
             </Card.Body>
           </Card>
   )

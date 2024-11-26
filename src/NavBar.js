@@ -16,8 +16,8 @@ import { CgMoreVertical } from 'react-icons/cg';
 function NavBar() {
     const expand=false;
   return (
-    <Navbar expand={expand} > 
-      <Container className='justify-content-between bg-white w-100'>
+    <Navbar expand={expand}> 
+      <Container className='justify-content-between bg-white w-100' fluid='lg'>
         <div>
       <Navbar.Toggle className='d-md-none p-0' inline/>
             <Navbar.Offcanvas className='d-md-none w-75'
@@ -76,12 +76,12 @@ function NavBar() {
                 id="flipkartImage" className='ps-1'/></Navbar.Brand>
         </div>
        
-        <Form className="d-md-flex flex-grow-1 ms-lg-5 ps-lg-5 " id="searchBox">
+        <Form className="d-md-flex flex-grow-1 w-auto" id="searchBox">
         
             <Form.Control 
               type="search"
               placeholder=" Search for Products, Brands and More"
-              className="me-2 mw-5 bg-light w-100"
+              className="bg-light"
               aria-label="Search"
             ></Form.Control>
         </Form>
