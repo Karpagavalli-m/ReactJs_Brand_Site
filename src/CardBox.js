@@ -22,7 +22,7 @@ const CardBox = () => {
   return (
     <Container fluid className='mt-3 bg-white'>
         <Row xs={1} md={3} className='g-3  d-flex justify-content-evenly'>
-        <Col className='border rounded p-3' lg={4}>
+        <Col className='border rounded p-3' lg={4} id="cardbox">
         <ItemsHeader title={'Best Gadgets & Appliances'} />
        <Row xs={2} lg={2} className="justify-content-center">
       {gadget.map((item, idx) => (
@@ -32,7 +32,7 @@ const CardBox = () => {
       ))}   
     </Row>
     </Col>
-    <Col className='border rounded p-3' lg={'auto'}>
+    <Col className='border rounded p-3' lg={'auto'} id="cardbox">
     <ItemsHeader title={'Home Decors and Furnishings'} />
        <Row xs={2} md={2}  > 
       {decor.map((item, idx) => (
@@ -42,7 +42,7 @@ const CardBox = () => {
       ))}   
     </Row>
     </Col>
-    <Col className='border rounded p-3' lg={3}>
+    <Col className='border rounded p-3' lg={3} id="cardbox">
     <ItemsHeader title={`Fashion's Top Deals`} />
        <Row xs={2} md={2} className="justify-content-center">
       {dress.map((item, idx) => (

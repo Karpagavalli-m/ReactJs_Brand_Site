@@ -53,10 +53,10 @@ code {
     display: none;
   }
 
-  #searchBox{
-   
+  #cardbody{
+   height:100px;
   }
-
+  
   #banner{
     height: 300px;
   }
@@ -96,3 +96,6 @@ code {
 }
 
 
+#cardheader{
+  height: 50px;
+}

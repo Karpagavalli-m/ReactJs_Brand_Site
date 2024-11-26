@@ -22,7 +22,7 @@ const SquareBox = () => {
   return (
     <Container fluid className='d-flex mt-3'>
         <Row sm xs={1} lg={1} 
-        className=' g-1 d-flex justify-content-evenly' >
+        className=' g-1 d-flex justify-content-evenly w-100' >
         <Col className='border rounded p-3' lg={3}> 
         <ItemsHeader title={'Recent viewed Items'}/>  
         <Row lg={2} className="d-flex overflow-x-auto justify-content-center">

@@ -4,7 +4,7 @@ import { IoIosArrowDroprightCircle } from 'react-icons/io'
 const ItemsHeader = ({title}) => {
   return (
     
-    <div className='d-flex justify-content-between'>
+    <div className='d-flex justify-content-between w-100' id="cardheader">
         <h4 className='d-inline'>{title}</h4>
         <h4 className='d-inline text-primary'><IoIosArrowDroprightCircle  /></h4>
         </div>

@@ -6,7 +6,7 @@ const RecentCard = ({array}) => {
     <>
     {array.map((item, idx) => (
         <Col key={idx} className='g-1 d-lg-grid' id="verticalScrollHide" sm={3}>
-          <Card className='align-items-center' >
+          <Card className='align-items-center text-center' >
           <Card.Img variant="top" src={require(`${item.image}`)}
           id="card-image" />
             <Card.Body className='p-2'>
