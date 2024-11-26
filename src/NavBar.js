@@ -17,7 +17,8 @@ function NavBar() {
     const expand=false;
   return (
     <Navbar expand={expand} > 
-      <Container className='justify-content-around bg-white'>
+      <Container className='justify-content-between bg-white w-100'>
+        <div>
       <Navbar.Toggle className='d-md-none p-0' inline/>
             <Navbar.Offcanvas className='d-md-none w-75'
               id={`offcanvasNavbar-expand-${expand}`}
@@ -52,7 +53,9 @@ function NavBar() {
                   <Nav.Link  href="#action1" className="pb-0"><BsSuitcaseLgFill id="icon"  />Sell on Flipkart</Nav.Link>
                   <hr />
                   <Nav.Link href="#action2" className="pt-0"><FaRectangleList id="icon"  />My Orders</Nav.Link>
-                  <Nav.Link href="#action2"><BiSolidCoupon id="icon"  />Coupons</Nav.Link>
+                  <Nav.Link 
+                  
+                  href="#action2"><BiSolidCoupon id="icon"  />Coupons</Nav.Link>
                   <Nav.Link  href="#action1"><BsSuitcaseLgFill id="icon"  />My Cart</Nav.Link>
                   <Nav.Link href="#action2"><MdFavorite id="icon"  />My Wishlist</Nav.Link>
                   <Nav.Link href="#action2"><FaUser id="icon"  />My Account</Nav.Link>
@@ -71,26 +74,39 @@ function NavBar() {
         <Navbar.Brand href="#home" >
         <Image src={require("./images/Flipkart-11.png") }    
                 id="flipkartImage" className='ps-1'/></Navbar.Brand>
+        </div>
+       
         <Form className="d-md-flex flex-grow-1 ms-lg-5 ps-lg-5 " id="searchBox">
         
             <Form.Control 
               type="search"
               placeholder=" Search for Products, Brands and More"
-              className="me-2 mw-6 bg-light"
+              className="me-2 mw-5 bg-light w-75"
               aria-label="Search"
             ></Form.Control>
         </Form>
-        <Navbar.Text >
-        <FaRegUserCircle  className='ms-4 me-2 mb-1 '/>
-        <Navbar.Text>Login</Navbar.Text>
-        <BsCart3  className='ms-4 me-2 mb-1'/>
-        <span className='d-lg-inline' id="headerText">Cart</span>
-        <BsShop  className='ms-4 me-2 mb-1'/>
-        <span className='d-lg-inline' id="headerText">Become a seller</span>
-        <CgMoreVertical  className='ms-4 mb-1'/>
+       
+        
+        <Navbar.Text className='d-flex justify-content-around align-items-center w-25 fs-6'>
+        <div>
+        <FaRegUserCircle  className='mb-1 '/>
+        <span className='ms-1'>Login</span>
+        </div>
+        <div>
+        <BsCart3  className='mb-1'/>
+        <span className='d-xl-inline ms-1' id="headerText">Cart</span>
+        </div>
+        <div>
+        <BsShop  className=' mb-1'/>
+        <span className='d-xl-inline ms-1' 
+        id="headerText">Become a seller</span>
+        </div>
+        <CgMoreVertical  />
         </Navbar.Text>
+       
       </Container>
     </Navbar>
+    
   );
 }
 
