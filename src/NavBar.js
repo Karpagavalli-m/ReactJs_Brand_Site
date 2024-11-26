@@ -9,7 +9,7 @@ import { BiSolidCoupon, BiSolidOffer } from 'react-icons/bi';
 import { FaRectangleList } from 'react-icons/fa6';
 import { MdFavorite } from 'react-icons/md';
 import Image from 'react-bootstrap/Image';
-import { Dropdown, Form } from 'react-bootstrap';
+import {  Form } from 'react-bootstrap';
 import { CgMoreVertical } from 'react-icons/cg';
 
 
@@ -17,22 +17,23 @@ function NavBar() {
     const expand=false;
   return (
     <Navbar expand={expand} > 
-      <Container className='justify-item-xs-between bg-white'>
-      <Navbar.Toggle className='d-md-none' inline/>
-            <Navbar.Offcanvas className='d-md-none'
+      <Container className='justify-content-around bg-white'>
+      <Navbar.Toggle className='d-md-none p-0' inline/>
+            <Navbar.Offcanvas className='d-md-none w-75'
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="start"
-              sm xs={5}
+
                >
               <Offcanvas.Header className='bg-primary text-white'closeButton>
                 
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    <FaUser className=' mb-1'/>
-                  <span className='ms-3'>Welcome!</span>
-                
-
-                  <img id="brand_logo" src={require('./images/Flipkart_logo2.png')} width={25}  alt="Brand Logo"/>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}
+                className='d-flex align-content-center justify-content-between  w-100 pe-3'>
+                  <div>
+                    <FaUser className=''/>
+                  <span className=''>Welcome!</span>
+                  </div>
+                  <img src={require('./images/Flipkart_logo2.png')}   alt="Brand Logo" className='bg-success ' />
                   
                 </Offcanvas.Title>
                 
@@ -68,8 +69,8 @@ function NavBar() {
                
             
         <Navbar.Brand href="#home" >
-        <Image src={require("./images/Flipkart-11.png") }  height={35}  className='height-md-2'
-                id="flipkartImage" /></Navbar.Brand>
+        <Image src={require("./images/Flipkart-11.png") }    
+                id="flipkartImage" className='ps-1'/></Navbar.Brand>
         <Form className="d-md-flex flex-grow-1 ms-lg-5 ps-lg-5 " id="searchBox">
         
             <Form.Control 
@@ -87,14 +88,6 @@ function NavBar() {
         <BsShop  className='ms-4 me-2 mb-1'/>
         <span className='d-lg-inline' id="headerText">Become a seller</span>
         <CgMoreVertical  className='ms-4 mb-1'/>
-        <Dropdown>
-      
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
         </Navbar.Text>
       </Container>
     </Navbar>
