@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { IoIosArrowDroprightCircle } from 'react-icons/io'
 import Cards from './Cards'
 import ItemsHeader from './ItemsHeader'
 
